@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cb7d9addccae4f7d97a6d0b48e96ad1c" Name="Diagram1">
+        <EntityTypeShape EntityType="AgentsModel.Agents" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgentsModel.AgentTypes" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgentsModel.ProductRealization" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgentsModel.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgentsModel.ProductType" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="AgentsModel.FK_Agents_AgentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="AgentsModel.FK_ProductRealization_Agents" ManuallyRouted="false" />
+        <AssociationConnector Association="AgentsModel.FK_ProductRealization_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="AgentsModel.FK_Products_ProductType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

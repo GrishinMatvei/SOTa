@@ -1,0 +1,40 @@
+﻿<Window x:Class="pleasantRustle.WindowChangeAgent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pleasantRustle"
+        mc:Ignorable="d"
+       Title="Изменение" Height="547" Width="509" Background="#e3b1b9" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <TextBox x:Name="tbName" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Height="26" Margin="142,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <ComboBox x:Name="cbTypeAgent" Background="#e3b1b9" HorizontalAlignment="Left" Margin="142,95,0,0" VerticalAlignment="Top" Width="154" Height="24"/>
+        <TextBox x:Name="tbPriority" PreviewTextInput="tbPhone_PreviewTextInput" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Height="26" Margin="142,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <TextBox x:Name="tbAdress" PreviewMouseDown="tbAdress_PreviewMouseDown" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Height="49" Margin="142,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <TextBox x:Name="tbINN" PreviewTextInput="tbPhone_PreviewTextInput" MaxLength="10" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Height="26" Margin="142,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox x:Name="tbKPP" PreviewTextInput="tbPhone_PreviewTextInput" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Height="25" Margin="142,263,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox x:Name="tbDirector" PreviewMouseDown="tbDirector_PreviewMouseDown" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Height="50" Margin="142,301,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox x:Name="tbPhone" MaxLength="10" PreviewTextInput="tbPhone_PreviewTextInput" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Height="25" Margin="142,356,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox x:Name="tbEmail" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Height="26" Margin="142,395,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+
+        <Image x:Name="logoImageBox" Margin="325,63,30,307"/>
+
+        <Button x:Name="btIzmen" Content="Изменить агента" BorderBrush="White" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Margin="325,356,0,0" VerticalAlignment="Top" Width="136" Height="34" Click="Button_Click"/>
+        <Button x:Name="btDelete" Content="Удалить агента" BorderBrush="White" Background="#e3b1b9" Foreground="WhiteSmoke" HorizontalAlignment="Left" Margin="325,395,0,0" VerticalAlignment="Top" Width="136" Height="34" Click="btDelete_Click"/>
+        <Button x:Name="buttonAddPhoto" Click="buttonAddPhoto_Click" BorderBrush="White" Background="#e3b1b9" Foreground="WhiteSmoke" Content="Добавить фотографию" HorizontalAlignment="Left" Margin="325,207,0,0" VerticalAlignment="Top" Width="136" Height="24"/>
+
+
+        <Label Foreground="WhiteSmoke" Content="Наименование" HorizontalAlignment="Left" Margin="43,52,0,0" VerticalAlignment="Top" Height="30" Width="94"/>
+        <Label Foreground="WhiteSmoke" Content="Тип агента" HorizontalAlignment="Left" Margin="65,91,0,0" VerticalAlignment="Top" Height="28" Width="72"/>
+        <Label Foreground="WhiteSmoke" Content="" HorizontalAlignment="Left" Margin="55,128,0,0" VerticalAlignment="Top" Height="29" Width="12"/>
+        <Label Foreground="WhiteSmoke" Content="Приоритет" HorizontalAlignment="Left" Margin="63,128,0,0" VerticalAlignment="Top" Height="29" Width="74"/>
+        <Label Foreground="WhiteSmoke" Content="Адрес" HorizontalAlignment="Left" Margin="89,165,0,0" VerticalAlignment="Top" Height="29" Width="45"/>
+        <Label Foreground="WhiteSmoke" Content="ИНН" HorizontalAlignment="Left" Margin="98,220,0,0" VerticalAlignment="Top" Height="29" Width="36"/>
+        <Label Foreground="WhiteSmoke" Content="КПП" HorizontalAlignment="Left" Margin="100,259,0,0" VerticalAlignment="Top" Height="29" Width="34"/>
+        <Label Foreground="WhiteSmoke" Content="Директор" HorizontalAlignment="Left" Margin="71,298,0,0" VerticalAlignment="Top" Height="29" Width="66"/>
+        <Label Foreground="WhiteSmoke" Content="Номер" HorizontalAlignment="Left" Margin="86,353,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.184,-0.308" Height="28" Width="50"/>
+        <Label Foreground="WhiteSmoke" Content="Почта" HorizontalAlignment="Left" Margin="91,391,0,0" VerticalAlignment="Top" Height="30" Width="45"/>
+        <Label Foreground="WhiteSmoke" x:Name="logoTextBox" Content="Логотип отсутствует" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="333,113,0,0"/>
+
+    </Grid>
+</Window>

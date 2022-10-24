@@ -1,0 +1,60 @@
+﻿<Window x:Class="SOTa.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SOTa"
+        Icon="Icons/open.ico"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="Продукты" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"></RowDefinition>
+            <RowDefinition Height="381*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Grid.Row="0">
+            <Button x:Name="back" Content="🚪" Margin="10" Width="30" BorderThickness="0" Background="Transparent" FontSize="20" Click="back_Click"/>
+            <Button x:Name="addItem" Content="☦" Margin="10" Width="30" Click="addItem_Click" BorderThickness="0" Background="Transparent" FontSize="20"/>
+            <Button x:Name="editItem" Content="🖊" Margin="10" Width="30" Visibility="Hidden" Click="editItem_Click" BorderThickness="0" Background="Transparent" FontSize="20"/>
+            <Button x:Name="deleteItem" Content="🗑" Margin="10" Width="30" Visibility="Hidden" Click="deleteItem_Click" BorderThickness="0" Background="Transparent" FontSize="20"/>
+        </StackPanel>
+        
+        <TextBlock x:Name="userInfo" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,15,0" />
+
+        <ListView x:Name="products" Grid.ColumnSpan="2" SelectedValuePath="ProductArticleNumber" SelectionChanged="products_SelectionChanged" SelectionMode="Single" Margin="0,53,0,0" Grid.RowSpan="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="160"/>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="150"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding ProductPhoto}" Grid.Column="0" Height="50" Width="100"/>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="{Binding ProductName}" FontWeight="Bold"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Описание: "/>
+                                <TextBlock Text="{Binding ProductDescription}" TextWrapping="Wrap"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Производитель: "/>
+                                <TextBlock Text="{Binding ManufacturerName}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Цена: "/>
+                                <TextBlock Text="{Binding ProductCost}"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <TextBlock Grid.Column="2" Text="{Binding ProductQuantityInStock}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

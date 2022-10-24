@@ -1,0 +1,23 @@
+﻿<Window x:Class="pleasantRustle.HelpWindows.AdressHelper"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pleasantRustle.HelpWindows"
+        mc:Ignorable="d"
+        Title="AdressHelper" BorderBrush="Black" BorderThickness="2" Height="280" Width="208" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Background="#e3b1b7">
+    <Canvas >
+        <TextBox x:Name="tbRegion" Background="#e3b1b9" Foreground="WhiteSmoke" BorderBrush="WhiteSmoke" Margin="10,27,10,202" Height="20" Width="170"/>
+        <TextBox x:Name="tbCity" BorderBrush="WhiteSmoke" Background="#e3b1b9" Foreground="WhiteSmoke" Height="20" Width="170" HorizontalAlignment="Center" Canvas.Left="10" Canvas.Top="67" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbStreet" BorderBrush="WhiteSmoke" Background="#e3b1b9" Foreground="WhiteSmoke" Height="20" Width="170" HorizontalAlignment="Center" Canvas.Left="10" Canvas.Top="107" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbHome" BorderBrush="WhiteSmoke" Background="#e3b1b9" Foreground="WhiteSmoke" Height="20" Width="170" HorizontalAlignment="Center" Canvas.Left="10" Canvas.Top="147" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbIndexCity" BorderBrush="WhiteSmoke" Background="#e3b1b9" Foreground="WhiteSmoke" Height="20" Width="170" HorizontalAlignment="Center" Canvas.Left="10" Canvas.Top="187" VerticalAlignment="Top"/>
+        <Label Content="Область" Background="#e3b1b9" Foreground="WhiteSmoke" Width="60" Height="23" FontSize="10" Canvas.Left="10" Canvas.Top="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Город" Background="#e3b1b9" Foreground="WhiteSmoke" Width="60" Height="23"  FontSize="10" Canvas.Left="10" Canvas.Top="47" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Улица" Background="#e3b1b9" Foreground="WhiteSmoke" Width="60" Height="23"  FontSize="10" Canvas.Left="10" Canvas.Top="87" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Дом" Background="#e3b1b9" Foreground="WhiteSmoke" Width="60" Height="23" FontSize="10" Canvas.Left="10" Canvas.Top="127" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Индекс" Background="#e3b1b9" Foreground="WhiteSmoke" Width="60" Height="23" FontSize="10" Canvas.Left="10" Canvas.Top="167" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Content="Применить" BorderBrush="WhiteSmoke" Background="#e3b1b9" Foreground="WhiteSmoke" x:Name="btSaveAdress" Width="70" Height="20" Canvas.Left="10" Canvas.Top="240" Click="btSaveAdress_Click"/>
+        <Button Content="Отмена" BorderBrush="WhiteSmoke" Background="#e3b1b9" Foreground="WhiteSmoke" x:Name="btCancelAdress" Width="70" Height="20" Canvas.Left="110" Canvas.Top="240" Click="btCancelAdress_Click"/>
+    </Canvas>
+</Window>

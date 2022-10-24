@@ -1,0 +1,126 @@
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe.config
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.pdb
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.AssemblyReference.cache
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.SuggestedBindingRedirects.cache
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.g.cs
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\App.g.cs
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.cache
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.lref
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.baml
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.g.resources
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.Properties.Resources.resources
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.GenerateResource.cache
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.CoreCompileInputs.cache
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.exe
+C:\Users\Student-SP4\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.pdb
+E:\eg\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe.config
+E:\eg\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe
+E:\eg\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.pdb
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.AssemblyReference.cache
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.SuggestedBindingRedirects.cache
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.g.cs
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\App.g.cs
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.cache
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.lref
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.baml
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.g.resources
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.Properties.Resources.resources
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.GenerateResource.cache
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.CoreCompileInputs.cache
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.exe
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.pdb
+E:\eg\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.dll
+E:\eg\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.SqlServer.dll
+E:\eg\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.xml
+E:\eg\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.SqlServer.xml
+E:\eg\pleasantRustle\pleasantRustle\bin\Debug\ru\EntityFramework.resources.dll
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_Content.g.cs
+E:\eg\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.CopyComplete
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe.config
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.pdb
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.dll
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.xml
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csprojAssemblyReference.cache
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.g.cs
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\App.g.cs
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_Content.g.cs
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.cache
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.lref
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.baml
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.g.resources
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.Properties.Resources.resources
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.GenerateResource.cache
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.CopyComplete
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.exe
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.pdb
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\Add_Agent_Window.g.cs
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\Add_Agent_Window.baml
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\PriorityChangeAgents.g.cs
+C:\Users\ukukk\Desktop\pleasantRustle\pleasantRustle\obj\Debug\PriorityChangeAgents.baml
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe.config
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.pdb
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.dll
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.xml
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.AssemblyReference.cache
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\Add_Agent_Window.g.cs
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.g.cs
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\PriorityChangeAgents.g.cs
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\App.g.cs
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_Content.g.cs
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.cache
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.lref
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\Add_Agent_Window.baml
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.baml
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\PriorityChangeAgents.baml
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.g.resources
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.Properties.Resources.resources
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.GenerateResource.cache
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.CoreCompileInputs.cache
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.CopyComplete
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.exe
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.pdb
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\HelpWindows\AdressHelper.g.cs
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\HelpWindows\AdressHelper.baml
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\HelpWindows\DirectorHelper.g.cs
+C:\Users\Ralo\Desktop\pleasantRustle\pleasantRustle\obj\Debug\HelpWindows\DirectorHelper.baml
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe.config
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.exe
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\bin\Debug\pleasantRustle.pdb
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.dll
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.xml
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\Add_Agent_Window.g.cs
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\HelpWindows\AdressHelper.g.cs
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\HelpWindows\DirectorHelper.g.cs
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.g.cs
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\PriorityChangeAgents.g.cs
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\App.g.cs
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_Content.g.cs
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.cache
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle_MarkupCompile.lref
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\Add_Agent_Window.baml
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\HelpWindows\AdressHelper.baml
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\HelpWindows\DirectorHelper.baml
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\MainWindow.baml
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\PriorityChangeAgents.baml
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.g.resources
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.Properties.Resources.resources
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.GenerateResource.cache
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csproj.CopyComplete
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.exe
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.pdb
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\WindowChangeAgent.g.cs
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\WindowChangeAgent.baml
+C:\Users\ukukk\Desktop\Новая папка\pleasantRustle\pleasantRustle\obj\Debug\pleasantRustle.csprojAssemblyReference.cache

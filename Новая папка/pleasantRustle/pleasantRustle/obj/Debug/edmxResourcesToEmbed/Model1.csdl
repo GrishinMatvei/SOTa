@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AgentsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Agents">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameCompany" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AgentTypeId" Type="Int32" />
+    <Property Name="Adress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="INN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KPP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Director" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Priority" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AgentTypes" Relationship="Self.FK_Agents_AgentTypes" FromRole="Agents" ToRole="AgentTypes" />
+    <NavigationProperty Name="ProductRealization" Relationship="Self.FK_ProductRealization_Agents" FromRole="Agents" ToRole="ProductRealization" />
+  </EntityType>
+  <EntityType Name="AgentTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Agents" Relationship="Self.FK_Agents_AgentTypes" FromRole="AgentTypes" ToRole="Agents" />
+  </EntityType>
+  <EntityType Name="ProductRealization">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="AgentId" Type="Int32" Nullable="false" />
+    <Property Name="DateRealization" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Count" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Agents" Relationship="Self.FK_ProductRealization_Agents" FromRole="ProductRealization" ToRole="Agents" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_ProductRealization_Products" FromRole="ProductRealization" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductTypeId" Type="Int32" />
+    <Property Name="Articul" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PriceMin" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="ProductRealization" Relationship="Self.FK_ProductRealization_Products" FromRole="Products" ToRole="ProductRealization" />
+    <NavigationProperty Name="ProductType" Relationship="Self.FK_Products_ProductType" FromRole="Products" ToRole="ProductType" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ProductType1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Products_ProductType" FromRole="ProductType" ToRole="Products" />
+  </EntityType>
+  <Association Name="FK_Agents_AgentTypes">
+    <End Role="AgentTypes" Type="Self.AgentTypes" Multiplicity="0..1" />
+    <End Role="Agents" Type="Self.Agents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgentTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Agents">
+        <PropertyRef Name="AgentTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductRealization_Agents">
+    <End Role="Agents" Type="Self.Agents" Multiplicity="1" />
+    <End Role="ProductRealization" Type="Self.ProductRealization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductRealization">
+        <PropertyRef Name="AgentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductRealization_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="ProductRealization" Type="Self.ProductRealization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductRealization">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_ProductType">
+    <End Role="ProductType" Type="Self.ProductType" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AgentsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Agents" EntityType="Self.Agents" />
+    <EntitySet Name="AgentTypes" EntityType="Self.AgentTypes" />
+    <EntitySet Name="ProductRealization" EntityType="Self.ProductRealization" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" />
+    <AssociationSet Name="FK_Agents_AgentTypes" Association="Self.FK_Agents_AgentTypes">
+      <End Role="AgentTypes" EntitySet="AgentTypes" />
+      <End Role="Agents" EntitySet="Agents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductRealization_Agents" Association="Self.FK_ProductRealization_Agents">
+      <End Role="Agents" EntitySet="Agents" />
+      <End Role="ProductRealization" EntitySet="ProductRealization" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductRealization_Products" Association="Self.FK_ProductRealization_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductRealization" EntitySet="ProductRealization" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_ProductType" Association="Self.FK_Products_ProductType">
+      <End Role="ProductType" EntitySet="ProductType" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
