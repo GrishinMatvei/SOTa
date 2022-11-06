@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\TestingLibs\\TestingLibs.csproj": {}
+    "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\TestingLibs\\TestingLibs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj": {
+    "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj",
+        "projectUniqueName": "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj",
         "projectName": "SF2022UserLib",
-        "projectPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj",
+        "projectPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj",
         "packagesPath": "C:\\Users\\SP4-IVC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\SF2022UserLib\\obj\\",
+        "outputPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\SF2022UserLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\TestingLibs\\TestingLibs.csproj": {
+    "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\TestingLibs\\TestingLibs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\TestingLibs\\TestingLibs.csproj",
+        "projectUniqueName": "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\TestingLibs\\TestingLibs.csproj",
         "projectName": "TestingLibs",
-        "projectPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\TestingLibs\\TestingLibs.csproj",
+        "projectPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\TestingLibs\\TestingLibs.csproj",
         "packagesPath": "C:\\Users\\SP4-IVC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\TestingLibs\\obj\\",
+        "outputPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\TestingLibs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,8 +90,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj": {
-                "projectPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj"
+              "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj": {
+                "projectPath": "C:\\Users\\SP4-IVC\\Desktop\\SOTa-main\\SOTa\\SF2022UserLib\\SF2022UserLib.csproj"
               }
             }
           }

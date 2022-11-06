@@ -11,8 +11,7 @@ namespace SOTa
 {
     using System;
     using System.Data.Entity;
-    using System.Data.Entity.Infrastructure;
-    
+
     public partial class TradeEntities : DbContext
     {
         private static TradeEntities _context;
@@ -28,10 +27,6 @@ namespace SOTa
             return _context;
         }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            throw new UnintentionalCodeFirstException();
-        }
     
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<Manufacturer> Manufacturer { get; set; }

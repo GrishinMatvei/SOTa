@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SOTa"
         Icon="Icons/open.ico"
+        ResizeMode="CanMinimize"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="Продукты" Height="450" Width="800">
     <Grid>
@@ -16,17 +17,30 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
         <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Grid.Row="0">
             <Button x:Name="back" Content="🚪" Margin="10" Width="30" BorderThickness="0" Background="Transparent" FontSize="20" Click="back_Click"/>
             <Button x:Name="addItem" Content="☦" Margin="10" Width="30" Click="addItem_Click" BorderThickness="0" Background="Transparent" FontSize="20"/>
             <Button x:Name="editItem" Content="🖊" Margin="10" Width="30" Visibility="Hidden" Click="editItem_Click" BorderThickness="0" Background="Transparent" FontSize="20"/>
             <Button x:Name="deleteItem" Content="🗑" Margin="10" Width="30" Visibility="Hidden" Click="deleteItem_Click" BorderThickness="0" Background="Transparent" FontSize="20"/>
+            <StackPanel Width="150" VerticalAlignment="Center">
+            <TextBlock Text="ПОСИСьК" Margin="0,0,0,5"/>
+                <TextBox x:Name="search" TextChanged="search_TextChanged"/>
+            </StackPanel>
         </StackPanel>
-        
-        <TextBlock x:Name="userInfo" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,15,0" />
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" Orientation="Horizontal">            
+            <StackPanel >
+                <TextBlock Text="Сортировка по цене:" />
+                <ComboBox HorizontalAlignment="Left" Width="200" Margin="0,5,0,0" SelectedValuePath="Uid" SelectionChanged="ComboBox_SelectionChanged">
+                    <ComboBoxItem Uid="withoutSort" Content="Без сортировки" IsSelected="True"/>
+                    <ComboBoxItem Uid="ascending" Content="По возрастанию"/>
+                    <ComboBoxItem Uid="descending" Content="По убыванию"/>
+                </ComboBox>
+            </StackPanel>
+            <TextBlock x:Name="userInfo" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="100,0, 50, 0"/>
+        </StackPanel>
 
-        <ListView x:Name="products" Grid.ColumnSpan="2" SelectedValuePath="ProductArticleNumber" SelectionChanged="products_SelectionChanged" SelectionMode="Single" Margin="0,53,0,0" Grid.RowSpan="2">
+        <ListView x:Name="productList" Grid.ColumnSpan="2" SelectedValuePath="ProductArticleNumber" SelectionChanged="products_SelectionChanged" SelectionMode="Single" Margin="0,53,0,0" Grid.RowSpan="2">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>

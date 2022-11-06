@@ -104,7 +104,6 @@ namespace SOTa
         {
             if (textcpt == vvodCaptchi.Text)
             {
-                _textEntred = true;
                 this.Close();
             }
             else captcha.Source = CreateImage(Convert.ToInt32(captcha.Width), Convert.ToInt32(captcha.Height));
@@ -116,7 +115,13 @@ namespace SOTa
             myGif.Position = new TimeSpan(0, 0, 1);
             myGif.Play();
         }
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e) => e.Cancel = true; 
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (vvodCaptchi.Text.Length < 5)
+            {
+                e.Cancel = true;
+            }
+        }
         #endregion
     }
 }

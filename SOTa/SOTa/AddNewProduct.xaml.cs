@@ -54,61 +54,67 @@ namespace SOTa
 
         private void SelectImageButton_Click(object sender, RoutedEventArgs e)
         {
-            string[] extensions = { ".jpg", ".bmp", ".png", ".jpeg" };
-            if (ofd.ShowDialog() == true)
+            try
             {
-                if (extensions.Contains(Path.GetExtension(ofd.FileName)))
+                string[] extensions = { ".jpg", ".bmp", ".png", ".jpeg" };
+                if (ofd.ShowDialog() == true)
                 {
-                    using (FileStream fs = new FileStream(ofd.FileName, FileMode.Open))
+                    if (extensions.Contains(Path.GetExtension(ofd.FileName)))
                     {
-                        newByteImage = new byte[fs.Length];
-                        fs.Read(newByteImage, 0, newByteImage.Length);
+                        using (FileStream fs = new FileStream(ofd.FileName, FileMode.Open))
+                        {
+                            newByteImage = new byte[fs.Length];
+                            fs.Read(newByteImage, 0, newByteImage.Length);
+                        }
+
+                        MemoryStream ms = new MemoryStream(newByteImage);
+                        BitmapImage image = new BitmapImage();
+                        image.BeginInit();
+                        image.StreamSource = ms;
+                        image.EndInit();
+                        PathImage = $"productImages\\{Path.GetFileName(ofd.FileName)}";
+                        var path2 = ofd.FileName;
+                        newPhoto = image;
+                        ProductPhotoImage.Source = BitmapFrame.Create(new Uri(ofd.FileName));
                     }
-
-                    MemoryStream ms = new MemoryStream(newByteImage);
-                    BitmapImage image = new BitmapImage();
-                    image.BeginInit();
-                    image.StreamSource = ms;
-                    image.EndInit();
-                    PathImage = $"productImages\\{Path.GetFileName(ofd.FileName)}";
-                    var path2 = ofd.FileName;
-                    newPhoto = image;
-                    ProductPhotoImage.Source = BitmapFrame.Create(new Uri(ofd.FileName));
+                    else
+                        MessageBox.Show("Выбранный файл не является фотографией", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-                else
-                    MessageBox.Show("Выбранный файл не является фотографией", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-
             }
+            catch { }
         }
 
         private void AcceptButton_Click(object sender, RoutedEventArgs e)
         {
-
-            Product product = (new Product
+            try
             {
-                ProductArticleNumber = articleTextbox.Text,
-                ProductName = nameTextbox.Text,
-                ProductDescription = DescriptionTextbox.Text,
-                ProductCost = Convert.ToDecimal(CostTextbox.Text),
-                ProductDiscountAmount = (byte?)Convert.ToInt32(MaximalDiscountTextbox.Text),
-                ProductDiscountActual = (byte?)Convert.ToInt32(ActualDiscountTextbox.Text),
-                ProductQuantityInStock = Convert.ToInt32(QuantityTextbox.Text),
-                ProductManufacturerID = ManafacturCombobox.SelectedIndex + 1,
-                ProductCategoryID = CategoryCombobox.SelectedIndex + 1,
-                ProductProviderID = ProviderCombobox.SelectedIndex + 1,
-                ProductPhoto = Path.GetFileName(PathImage)
-            });
+                Product product = (new Product
+                {
+                    ProductArticleNumber = articleTextbox.Text,
+                    ProductName = nameTextbox.Text,
+                    ProductDescription = DescriptionTextbox.Text,
+                    ProductCost = Convert.ToDecimal(CostTextbox.Text),
+                    ProductDiscountAmount = (byte?)Convert.ToInt32(MaximalDiscountTextbox.Text),
+                    ProductDiscountActual = (byte?)Convert.ToInt32(ActualDiscountTextbox.Text),
+                    ProductQuantityInStock = Convert.ToInt32(QuantityTextbox.Text),
+                    ProductManufacturerID = ManafacturCombobox.SelectedIndex + 1,
+                    ProductCategoryID = CategoryCombobox.SelectedIndex + 1,
+                    ProductProviderID = ProviderCombobox.SelectedIndex + 1,
+                    ProductPhoto = Path.GetFileName(PathImage)
+                });
 
-            if (!File.Exists(PathImage))
-            {
-                File.Copy($"{ofd.FileName}", $"{PathImage}");
+                if (!File.Exists(PathImage))
+                {
+                    File.Copy($"{ofd.FileName}", $"{PathImage}");
+                }
+                db.Product.Add(product);
+                db.SaveChanges();
+
+                MessageBox.Show("Продукт добавлен");
+
+                Close();
             }
-            db.Product.Add(product);
-            db.SaveChanges();
-
-            MessageBox.Show("Продукт добавлен");
-
-            Close();
+            catch { }
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)

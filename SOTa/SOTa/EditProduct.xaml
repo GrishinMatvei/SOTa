@@ -57,6 +57,7 @@
         <Button Content="Подтвердить" x:Name="AcceptButton" Grid.Column="1" Grid.Row="11" Height="30" Margin="5,1,0,14" FontSize="15" Click="AcceptButton_Click"/>
 
         <Image x:Name="ProductPhotoImage" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="140" Margin="120,35,0,0" Grid.Row="10" VerticalAlignment="Top" Width="140"/>
+ 
 
     </Grid>
 </Window>
